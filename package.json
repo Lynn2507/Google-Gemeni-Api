@@ -1,0 +1,50 @@
+{
+  "name": "google-gemeni-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "api.js",
+  "scripts": {
+    "lint": "eslint",
+    "start": "nodemon.api.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google/generative-ai": "^0.2.1",
+    "dotenv": "^16.4.5",
+    "env": "^0.0.2",
+    "nodemon": "^3.1.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.24.0",
+    "@babel/eslint-parser": "^7.23.10",
+    "@typescript-eslint/eslint-plugin": "^7.1.0",
+    "@typescript-eslint/parser": "^7.1.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^8.57.0"
+  },
+  "eslintConfig": {
+      "env": {
+          "browser": true,
+          "node": true
+      },
+      "extends": {
+        "eslint:recommended":
+        "plugin:react/recommended"
+      },
+      "parser": "@babel/eslint-parser",
+      "parserOptions": {
+          "ecmaVersion": 2024,
+          "sourceType": "module"
+      }, 
+      "rules": {
+          "indent": ["warn", 4],
+          "react/jsx-indent": ["warn", 4, { "checkAttributes": true}],
+          "react/react-in-jsx-scope": "off",
+          "react/destructuring-assignment": "off",
+          "no-nested-ternary": "warn",
+          "react/prop-types": "warn"
+      }
+  }
+}
