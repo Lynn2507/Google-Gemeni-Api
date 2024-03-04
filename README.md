@@ -1,5 +1,5 @@
 # Google-Gemeni-Api
-Since I have accidentally uploaded API_KEY on Github. I have deleted the API_KEY Google AI Studio
+Since I have accidentally uploaded API_KEY on Github. I have deleted the API_KEY Google AI Studio.
 Documentation for using different Google Gemini Model REST APIs. - https://ai.google.dev/tutorials/node_quickstart
 ![image](https://github.com/Lynn2507/Google-Gemeni-Api/assets/134114751/39675000-8823-4424-944a-da7158554bee)
 
