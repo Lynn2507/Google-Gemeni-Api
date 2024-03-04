@@ -14,6 +14,7 @@
     "@google/generative-ai": "^0.2.1",
     "dotenv": "^16.4.5",
     "env": "^0.0.2",
+    "fs": "^0.0.1-security",
     "nodemon": "^3.1.0"
   },
   "devDependencies": {
@@ -25,26 +26,35 @@
     "eslint": "^8.57.0"
   },
   "eslintConfig": {
-      "env": {
-          "browser": true,
-          "node": true
-      },
-      "extends": {
-        "eslint:recommended":
-        "plugin:react/recommended"
-      },
-      "parser": "@babel/eslint-parser",
-      "parserOptions": {
-          "ecmaVersion": 2024,
-          "sourceType": "module"
-      }, 
-      "rules": {
-          "indent": ["warn", 4],
-          "react/jsx-indent": ["warn", 4, { "checkAttributes": true}],
-          "react/react-in-jsx-scope": "off",
-          "react/destructuring-assignment": "off",
-          "no-nested-ternary": "warn",
-          "react/prop-types": "warn"
-      }
+    "env": {
+      "browser": true,
+      "node": true
+    },
+    "extends": [
+      "eslint:recommended",
+      "plugin:react/recommended"
+    ],
+    "parser": "@babel/eslint-parser",
+    "parserOptions": {
+      "ecmaVersion": 2023,
+      "sourceType": "module"
+    },
+    "rules": {
+      "indent": [
+        "warn",
+        4
+      ],
+      "react/jsx-indent": [
+        "warn",
+        4,
+        {
+          "checkAttributes": true
+        }
+      ],
+      "react/react-in-jsx-scope": "off",
+      "react/destructuring-assignment": "off",
+      "no-nested-ternary": "warn",
+      "react/prop-types": "warn"
+    }
   }
 }
